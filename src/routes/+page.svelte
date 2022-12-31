@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    let counter = 0;
+</script>
+<style>
+    button {
+        background: green;
+        color:#FFF;
+    }
+</style>
+
+I'm counting ... {counter}
+<button on:click={() => {counter++}}>Count up</button>
